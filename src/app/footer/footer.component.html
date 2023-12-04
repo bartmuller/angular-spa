@@ -7,11 +7,20 @@
                         © All rights reserved
                     </div>
                     <div class="footer__box">
-                        <div class="status__dot pulse"></div>
-                        Beschikbaar voor opdrachten
+                        <ng-container class="footer__status" *ngIf="available; else unavailable">
+                            <div class="status__dot"></div>
+                            <a class="link" routerLink="/contact">Beschikbaar voor opdrachten </a>
+                        </ng-container>
+                              
+                            <ng-template class="footer__status" #unavailable>
+                                <div class="status__dot status__dot--red"></div>
+                                Momenteel niet beschikbaar voor opdrachten
+                            </ng-template>
                     </div>
+                    
                     <div class="footer__box">
-                        <a routerLink="/contact" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>

@@ -2,15 +2,44 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 nav__contact">
-        contact info
+        <div class="nav__info">
+          <div><strong>Contact</strong></div>
+          <div><a href="#">wouter@eden.nl</a></div>
+          <div><a href="#">0612345678</a></div>
+        </div>
+        <div class="nav__info">
+          <div><strong>Location</strong></div>
+          <div><a href="https://maps.app.goo.gl/oLZrzzdDWmXmCtFg9" target="_blank">Veenendaal</a></div>
+          <div><a href="https://maps.app.goo.gl/CCnuVy9YRzuQJyoo6" target="_blank">The Netherlands</a></div>
+        </div>
       </div>
       <div class="col-md-6">
         <ul class="nav__list">
           <small class="nav__small">menu</small>
-          <li class="nav__item"><a class="nav__link" (click)="test()" routerLink="/home">Home</a></li>
-          <li class="nav__item"><a class="nav__link" (click)="test()" routerLink="/home#about-me">About me</a></li>
-          <li class="nav__item"><a class="nav__link" (click)="test()" routerLink="/resume">Resume</a></li>
-          <li class="nav__item"><a class="nav__link" (click)="test()" routerLink="/contact">Contact</a></li>
+          <li class="nav__item">
+            <a class="nav__link" (click)="test()" routerLink="/home">
+              <div class="nav__text first-up">Home</div>
+              <div class="nav__text second-up">Home</div>
+          </a>
+        </li>
+          <li class="nav__item">
+            <a class="nav__link" (click)="test()" routerLink="/home#about-me">
+              <div class="nav__text first-up">About me</div>
+              <div class="nav__text second-up">About me</div>
+          </a>
+        </li>
+          <li class="nav__item">
+            <a class="nav__link" (click)="test()" routerLink="/resume">
+              <div class="nav__text first-up">Resume</div>
+              <div class="nav__text second-up">Resume</div>
+          </a>
+        </li>
+          <li class="nav__item">
+            <a class="nav__link" (click)="test()" routerLink="/contact">
+              <div class="nav__text first-up">Contact</div>
+              <div class="nav__text second-up">Contact</div>
+          </a>
+        </li>
         </ul>
       </div>
     </div>
@@ -18,11 +47,15 @@
 </div>
 <nav class="nav">
   <div class="nav__wrapper">
-    <div class="nav__box">
-      <a href="#">W</a>
+    <div class="nav__box" id="box1">
+      <a href="" class="logo">W</a>
     </div>
-    <div class="nav__box">
-      <div class="nav__hamburger" (click)="test()">=</div>
+    <div class="nav__box" id="box2">
+      <div class="nav__hamburger" (click)="test()" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
   

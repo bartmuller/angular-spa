@@ -84,5 +84,9 @@ svg.bottom {
 
 .what-i-do {
   margin-top: 15vh;
- color: white;
+ color: $grey;
+}
+
+.what-i-do__item {
+  padding-bottom: $space-l;
 }

@@ -4,9 +4,9 @@ export const INFORMATION: Info [] = [
   { first: "Age", second: '27' },
   { first: "Residence ", second: 'the Netherlands' },
   { first: "City ", second: 'Veenendaal' },
-  { first: "Email  ", second: 'wouter@gay.nl' },
+  { first: "Email  ", second: 'wouter@eden.nl' },
   { first: "Phone  ", second: '061345678' },
-  { first: "Hobies  ", second: 'Rimming' },
+  { first: "Hobies  ", second: 'Chilling' },
 ];
 
 export const WHATIDO: WhatIDo [] = [
