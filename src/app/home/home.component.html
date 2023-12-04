@@ -1,0 +1,120 @@
+<section class="section hero">
+    <div class="hero__content">
+        <img class="hero__img" src="../../assets/man-in-suit.png" alt="image-of-wouter">
+
+        <h1>Wouter van Eden</h1>
+        <h2>Data analist</h2>
+
+        <div class="button-stack">
+            <a class="button" routerLink="/#">About me</a>
+            <a class="button" routerLink="/#">Contact</a>
+        </div>
+    </div>
+</section>
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none">
+        <defs>
+            <path id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s
+               58 18 88 18 58-18 88-18
+               58 18 88 18 v44h-352z"/>
+        </defs>
+        <g class="waves">
+            <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="6"
+                fill="#610EE9"
+                fill-opacity="1"/>
+                <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="3"
+                fill="#610EE9"
+                fill-opacity=".5"/>
+            <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="0"
+                fill="#610EE9"
+                fill-opacity=".2"/>
+            <use y="3" fill-opacity=".5" />
+            <use y="6" fill-opacity=".9" />
+        </g>
+    </svg>
+<section class="section about-me" id="about-me">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h2>About me</h2></div>
+            <div class="col-md-7">
+                <article class="about-me__info">
+                    <p><span id="greeting">{{title}}</span> {{aboutMe}}</p>
+                </article>
+            </div>
+            <div class="offset-md-1 col-md-4">
+                <aside>
+                  <div class="about-me__list">
+                    <div class="about-me__row" *ngFor="let item of information">
+                        <strong>{{item.first}}</strong>
+                        <div>{{item.second}}</div>
+                    </div>
+                  </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <svg class="bottom"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none">
+        <defs>
+            <path id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s
+               58 18 88 18 58-18 88-18
+               58 18 88 18 v44h-352z"/>
+        </defs>
+        <g class="waves">
+            <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="6"
+                fill="#610EE9"
+                fill-opacity="1"/>
+                <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="3"
+                fill="#610EE9"
+                fill-opacity=".5"/>
+            <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="0"
+                fill="#610EE9"
+                fill-opacity=".2"/>
+            <use y="3" fill-opacity=".5" />
+            <use y="6" fill-opacity=".9" />
+        </g>
+    </svg>
+</section>
+
+<section class="section what-i-do">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h2>What I do</h2></div>
+            <div class="col-md-3 col-sm-6" *ngFor="let item of whatido">
+                <div class="what-i-do__item">
+                    <i class="fa-solid fa-mug-saucer" style="color: #183153;"></i>
+                    <h4>{{item.title}}</h4>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

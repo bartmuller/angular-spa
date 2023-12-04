@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+// spacing
+$space-s: 10px;
+$space-m: 20px;
+$space-l: 30px;
+$space-xl: 45px;
+
+// colors 
+$blue: #610EE9;
+$grey: #cac4b8;
+$bg-grey: #222;
+
+//fonts 
+$base-size: 16px;
+
+
+//components 
+
+.button-stack {
+    margin-top: $space-xl;
+    display: flex;
+    gap: $space-s;
+    flex-direction: column;
+}
+
+.button {
+    z-index: 1;
+    color: $grey;
+    width: 100%;
+    max-width: 20em;
+    background: $bg-grey;
+    border: .1em solid $grey;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    transition: color .2s cubic-bezier(.55, .085, .68, .53);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+// browser reset
+body {
+    overflow-x: hidden;
+    background: $bg-grey;
+}
+
+h1,h2,h3,p,small {
+    color: white;
+}
+
+h2 {
+    margin-bottom: $space-l;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+i {
+    color: $blue !important; //uit de boze!
+    font-size: 40px;
+    padding-bottom: $space-s;
+}
