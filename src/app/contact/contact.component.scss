@@ -1,35 +1,11 @@
-.nav__item2 {
-    height: 3.5em;
-    color: red;
-    margin-bottom: 2em;
-    padding-left: .5em;
-    padding-right: .5em;
-    text-decoration: none;
-    transition: opacity .2s cubic-bezier(.55, .085, .68, .53);
-    overflow: hidden;
-    display: inline-block;
+@import '../../styles.scss';
 
-    &:hover {
-        .first-up {
-            transform: translate3d(0px, -100%, 0px);
-        }
-
-        .second-up {
-            transform: translate3d(0px, -100%, 0px);
-            color: blue;
-        }
-    }
+.contact__intro {
+    display: flex;
 }
 
-.nav__item-text {
-    text-transform: uppercase;
-    margin-right: -.1em;
-    padding-left: .1em;
-    padding-right: .1em;
-    font-size: 3.5em;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 100%;
-    text-decoration: none;
-   
+.contact__word {
+    margin-right: 10px;
+    white-space: nowrap;
+    display: inline-block;
 }

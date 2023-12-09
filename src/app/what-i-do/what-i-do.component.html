@@ -1,0 +1,14 @@
+<section class="section what-i-do">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h2>What I do</h2></div>
+            <div class="col-md-3 col-sm-6" *ngFor="let item of whatido">
+                <div class="what-i-do__item">
+                    <i class="fa-solid fa-mug-saucer" style="color: #183153;"></i>
+                    <h4>{{item.title}}</h4>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

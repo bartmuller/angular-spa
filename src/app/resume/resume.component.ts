@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CERTIFICATES, RESUME } from '../mock-info';
 
 @Component({
   selector: 'app-resume',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent {
-
+  resume = RESUME;
+  certificate = CERTIFICATES;
 }

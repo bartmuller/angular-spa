@@ -1,0 +1,111 @@
+@import '../../styles.scss';
+
+h3 {
+    margin-bottom: $space-l;
+}
+
+.resume__block {
+    margin-bottom: $space-xl;
+}
+
+.flex {
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    display: block;
+    padding-left : 10px;
+
+    @media only screen and (min-width: 768px) {
+    display: table;
+    table-layout: fixed;
+    padding-left: 0;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.resume__text {
+    color: $grey;
+}
+
+.resume__year {
+    font-weight: bold;
+}
+
+.resume__info {
+    display: table-cell;
+    padding-left: $space-m;
+
+    @media only screen and (min-width: 768px) {
+        &--left {
+            width: 25%;
+            padding-right: $space-m; 
+            padding-left: 0;
+        }
+
+        &--right {
+            width: 75%;
+        }
+    }
+}
+
+h4, h5 {
+    color: white;
+}
+
+.resume__divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: $grey;
+
+    @media only screen and (min-width: 768px) {
+        left: 25%;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: 4px;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        margin-left: -8px;
+        border-radius: 10px;
+        background-color: #0ba376;
+        opacity: .25;
+        z-index: 0;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: 8px;
+        width: 9px;
+        height: 9px;
+        margin-left: -4px;
+        background-color: white;
+        border-radius: 5px;
+        border: 2px solid #0ba376;
+        z-index: 1;
+    }
+}
+
+.resume__certifcate {
+    display: flex;
+}
+
+.resume__image {
+    height: 46px;
+    width: 46px;
+    margin-left: $space-m;
+}
+
+.resume__certifcate {
+    margin-bottom: $space-m;
+}

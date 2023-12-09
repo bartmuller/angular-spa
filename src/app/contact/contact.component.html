@@ -1,4 +1,37 @@
-<a href="/contact" class="nav__item2 w-inline-block">
-    <div class="nav__item-text first-up">Contact</div>
-    <div class="nav__item-text second-up">Contact</div>
-</a>
+<section class="section"></section>
+    <div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<sub>Contact</sub>
+				<div class="contact__intro">
+					<h1>
+						<!-- TODO: fade in animationn -->
+						<div *ngFor="let letter of letters" class="contact__word">{{letter.item}}</div>
+					</h1>
+				</div>
+				<p>I am currently working somewhere but I would like to work some more!</p>
+				<div class="button-stack">
+					<a class="button" href="tel:+0612345678">
+						<div class="button__block first-up">0612345678</div>
+						<div class="button__block second-up">0612345678</div>
+					</a>
+					<a class="button" href="mailto:wouter@zakendoen.nl">
+						<div class="button__block first-up">wouter@zakendoen.nl</div>
+						<div class="button__block second-up">wouter@zakendoen.nl</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 offset-md-1">
+				<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39281.59720106874!2d5.5514622!3d52.0232791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6522a2a3ad32b%3A0x3fe2f0d7aea3937f!2sVeenendaal!5e0!3m2!1snl!2snl!4v1702151276578!5m2!1snl!2snl" 
+				width="600" 
+				height="450" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+			</div>
+		</div>
+	</div>
+    

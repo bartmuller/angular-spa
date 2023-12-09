@@ -33,13 +33,35 @@ $base-size: 16px;
     border: .1em solid $grey;
     justify-content: center;
     align-items: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
     text-decoration: none;
     transition: color .2s cubic-bezier(.55, .085, .68, .53);
-    display: flex;
+    display: block;
     position: relative;
     overflow: hidden;
+    text-align: center;
+
+    transition: opacity .2s cubic-bezier(.55, .085, .68, .53);
+    overflow: hidden;
+    height: 45px;
+
+    .button__block {
+        padding: 0.5rem 0;
+        height: 45px;
+        transition: all .4s;
+        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+    }
+
+    &:hover {
+        .first-up {
+            transform: translate3d(0px, -100%, 0px);
+        }
+
+        .second-up {
+            transform: translate3d(0px, -100%, 0px);
+            color: $bg-grey;
+            background-color: $grey;
+        }
+    }
 }
 
 // browser reset
