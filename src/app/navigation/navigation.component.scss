@@ -139,6 +139,10 @@
     &:last-of-type {
         margin-top: $space-l;
     }
+
+    a:hover {
+        color: white;
+    }
 }
 
 .nav__hamburger {

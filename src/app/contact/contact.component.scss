@@ -8,4 +8,13 @@
     margin-right: 10px;
     white-space: nowrap;
     display: inline-block;
+    opacity: 0;
+    transition:  all 1s;
+    filter: blur(5px);
+}
+
+.fade-in {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
 }
