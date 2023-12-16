@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__img {
+    max-width: 60vw;
+    object-fit: cover;
+}
+
+.hero__content {
+    margin-top: 100px;
+    text-align: center;
+}

@@ -11,6 +11,7 @@ import { WhatIDoComponent } from './what-i-do/what-i-do.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     WhatIDoComponent,
     AboutMeComponent,
-    NavigationComponent
+    NavigationComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
